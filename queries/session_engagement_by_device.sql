@@ -12,7 +12,6 @@ WITH session_info AS (
   FROM `data-analytics-mate.DA.event_params`,
   UNNEST(event_params) AS params
   WHERE params.key = 'session_engaged'
-
 )
 
 -- Step 2: Calculate engagement rate per device type
